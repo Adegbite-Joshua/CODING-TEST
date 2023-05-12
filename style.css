@@ -274,6 +274,10 @@ body{
   .SubscribeDiv{
     background-color: black;
   }
+  .form-control{
+    width: 100%;
+    border-radius: 5px;
+  }
 
 
 
