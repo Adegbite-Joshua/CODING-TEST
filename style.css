@@ -17,7 +17,7 @@ body{
     width: 75%;
     height: 100%;
     flex-flow: row wrap;
-    padding-right: 2rem;
+    padding-right: 4rem;
     align-items: center;
     list-style: none;
     gap: 1rem;
@@ -231,9 +231,48 @@ body{
     display: flex;
     padding-left: 4rem;
     padding-right: 4rem;
+    height: 500px;
+    flex-flow: row wrap;
   }
   .plugInImage, .plugInDiv{
-    flex-basis: 50%;
+    flex-basis: 40%;
+    height: 500px;
+  }
+  .plugInDiv{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem;
+    padding-right: 6rem;
+  }
+  @media (max-width: 768px) {
+    .plugInImage{
+        flex-basis: 0;
+        width: 200px;
+        height: 200px;
+    }
+    .plugInImage, .plugInDiv{
+        flex-basis: 100% !important;
+        width: 100% !important;
+    }
+  }
+
+
+
+
+  /* Upcoming ecvent Styling */
+  
+  .UpcomingEvent, .SubscribeDiv{
+    height: 500px;
+    width: 100%;
+    background-color: #FAFAFA;
+  }
+  .UpcomingEvent{
+    background-color: #FAFAFA;
+  }
+  .SubscribeDiv{
+    background-color: black;
   }
 
 
